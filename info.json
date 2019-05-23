@@ -1,0 +1,85 @@
+{
+    "instrument": {
+        "id": "ETH-USDC",
+        "exchange": "coinbasepro",
+        "status": "trading",
+        "exchange_info": {
+            "id": "ETH-USDC",
+            "base_currency": "ETH",
+            "quote_currency": "USDC",
+            "base_min_size": "0.01",
+            "base_max_size": "2800",
+            "base_increment": "0.00000001",
+            "quote_increment": "0.01",
+            "display_name": "ETH/USDC",
+            "status": "online",
+            "margin_enabled": false,
+            "status_message": "",
+            "min_market_funds": "10",
+            "max_market_funds": "1000000",
+            "post_only": false,
+            "limit_only": false,
+            "cancel_only": false
+        },
+        "base_asset": "ETH",
+        "quote_asset": "USDC"
+    },
+    "base_asset": {
+        "id": "ETH",
+        "precision": 8,
+        "exchange_info": {
+            "id": "ETH",
+            "name": "Ether",
+            "min_size": "0.00000001",
+            "status": "online",
+            "message": null,
+            "details": {
+                "type": "crypto",
+                "symbol": "\u039e",
+                "network_confirmations": 35,
+                "sort_order": 25,
+                "crypto_address_link": "https://etherscan.io/address/{{address}}",
+                "crypto_transaction_link": "https://etherscan.io/tx/0x{{txId}}",
+                "push_payment_methods": [
+                    "crypto"
+                ],
+                "group_types": [
+                    "eth",
+                    "crypto"
+                ]
+            },
+            "max_precision": "0.00000001"
+        }
+    },
+    "quote_asset": {
+        "id": "USDC",
+        "precision": 6,
+        "exchange_info": {
+            "id": "USDC",
+            "name": "USD Coin",
+            "min_size": "0.000001",
+            "status": "online",
+            "message": null,
+            "details": {
+                "type": "crypto",
+                "symbol": "$",
+                "network_confirmations": 35,
+                "sort_order": 80,
+                "crypto_address_link": "https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48?a={{address}}",
+                "crypto_transaction_link": "https://etherscan.io/tx/0x{{txId}}",
+                "push_payment_methods": [
+                    "crypto"
+                ],
+                "group_types": [
+                    "stablecoin",
+                    "usdc",
+                    "crypto"
+                ]
+            },
+            "max_precision": "0.000001",
+            "convertible_to": [
+                "USD"
+            ]
+        }
+    }
+}
